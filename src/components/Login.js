@@ -11,7 +11,7 @@ function Login() {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
   const handlesubmit = async () => {
-    const response = await fetch("http://localhost:8000/auth/login", {
+    const response = await fetch("https://practice-umber-xi.vercel.app/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

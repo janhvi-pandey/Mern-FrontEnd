@@ -11,7 +11,7 @@ function AddNote() {
   };
 
   const handleclick = async () => {
-    const response = await fetch("http://localhost:8000/notes/create", {
+    const response = await fetch("https://practice-umber-xi.vercel.app/notes/create", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

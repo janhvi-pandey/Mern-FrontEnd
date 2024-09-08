@@ -15,7 +15,7 @@ function Register() {
     }
 
     const handlesubmit = async () => {
-        const response = await fetch('http://localhost:8000/auth/register', {
+        const response = await fetch('https://practice-umber-xi.vercel.app/auth/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

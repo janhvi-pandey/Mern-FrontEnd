@@ -20,7 +20,7 @@ function UserProfile() {
 
   useEffect(() => {
     const fetchuser = async () => {
-      const response = await fetch(`http://localhost:8000/auth/userprofile`, {
+      const response = await fetch(`https://practice-umber-xi.vercel.app/auth/userprofile`, {
         method: "GET",
         headers: {
           token: token,
@@ -39,7 +39,7 @@ function UserProfile() {
   };
 
   const getnotes = async () => {
-    const response = await fetch("http://localhost:8000/notes/getnotes", {
+    const response = await fetch("https://practice-umber-xi.vercel.app/notes/getnotes", {
       method: "GET",
       headers: {
         token: token,
@@ -52,7 +52,7 @@ function UserProfile() {
   };
 
   const handleedit = async (id) => {
-    const note = await fetch(`http://localhost:8000/notes/getnote/${id}`, {
+    const note = await fetch(`https://practice-umber-xi.vercel.app/notes/getnote/${id}`, {
       method: "GET",
       headers: {
         token: token,
@@ -69,7 +69,7 @@ function UserProfile() {
   };
 
   const handleupdate = async (id) => {
-    const response = await fetch(`http://localhost:8000/notes/editnote/${id}`, {
+    const response = await fetch(`https://practice-umber-xi.vercel.app/notes/editnote/${id}`, {
       method: "PUT",
       headers: {
         token: token,
@@ -83,7 +83,7 @@ function UserProfile() {
 
   const handledelete = async (id) => {
     await fetch(
-      `http://localhost:8000/notes/deletenote/${id}`,
+      `https://practice-umber-xi.vercel.app/notes/deletenote/${id}`,
       {
         method: "DELETE",
         headers: {
